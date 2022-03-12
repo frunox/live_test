@@ -18,6 +18,7 @@ defmodule LiveTestWeb.Router do
     pipe_through :browser
 
     live "/counter", CounterLive
+    live "/foo", FooLive
 
     get "/", PageController, :index
   end
