@@ -1,9 +1,9 @@
 defmodule LiveTestWeb.CounterLive do
   use Phoenix.LiveView
 
-  def render(assigns) do
-    Phoenix.View.render(LiveTestWeb.CounterView, "index.html", assigns)
-  end
+  # def render(assigns) do
+  #   Phoenix.View.render(LiveTestWeb.CounterView, "index.html", assigns)
+  # end
 
   def mount(_params, _session, socket) do
     {:ok, assign(socket, :val, 0)}
